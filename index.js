@@ -11,6 +11,14 @@ for (var i = 0; i < numberOfDrumButtons; i++) {
     buttonAnimation(buttonInnerHTML);
 
   });
+  document.querySelectorAll(".drum")[i].addEventListener("mouseover", function(){
+     
+    var mouseInnerHTML = this.innerHTML;
+    
+    makeSound(mouseInnerHTML);
+    
+    buttonAnimation(mouseInnerHTML);
+  });
 
 }
 
